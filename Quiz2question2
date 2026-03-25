@@ -1,0 +1,36 @@
+public class Quiz2question2 {
+
+    public static double calculateClassAverage(int num1,int num2){
+
+        double mean = (num1 + num2)/2;
+        return mean;
+
+    }
+
+
+    public static double calculateClassAverage(int num1,int num2,int num3){
+
+        double mean = (num1 + num2 + num3)/3;
+        return mean;
+
+    }
+    
+
+    
+
+    public static double calculateClassAverage(int[] numbers){
+
+        double sum = 0;
+
+        for(int number : numbers) {
+            
+            sum = number + sum;
+        }
+        
+        double mean =  (sum) / numbers.length;
+        return mean;
+        
+
+    }
+    
+}
